@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DevCore | Software a medida que impulsa tu negocio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="#" class="nav-logo"><img src="assets/logo-horizontal.webp" alt="DevCore"></a>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#industrias">Industrias</a>
+      <a href="#planes">Planes</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#" class="nav-login">Iniciar sesión</a>
+      <a href="#planes" class="btn btn-primary">Agendar diagnóstico</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menú">☰</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Desarrollo de software a medida</span>
+        <h1>Construimos el <span class="accent">software</span> que tu negocio necesita, no el que ya existe</h1>
+        <p class="sub">DevCore es un equipo de desarrollo que diseña, construye y mantiene productos digitales a medida: web, apps, backend, integraciones y la infraestructura para que todo funcione.</p>
+        <div class="hero-cta">
+          <a href="#planes" class="btn btn-primary">Agendar diagnóstico gratuito</a>
+          <a href="#servicios" class="btn btn-ghost">Ver cómo trabajamos</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>40+</b><span>Proyectos entregados</span></div>
+          <div class="hero-stat"><b>8</b><span>Industrias atendidas</span></div>
+          <div class="hero-stat"><b>2–8</b><span>Semanas al primer release</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <svg class="cube-float" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cubeGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#8FE23A"/>
+              <stop offset="100%" stop-color="#17B8A6"/>
+            </linearGradient>
+          </defs>
+          <polygon points="50,8 88,28 50,48 12,28" fill="url(#cubeGrad)" opacity="0.95"/>
+          <polygon points="12,28 50,48 50,92 12,72" fill="url(#cubeGrad)" opacity="0.65"/>
+          <polygon points="88,28 50,48 50,92 88,72" fill="url(#cubeGrad)" opacity="0.8"/>
+        </svg>
+        <div class="term">
+          <div class="term-bar">
+            <div class="term-dot"></div><div class="term-dot"></div><div class="term-dot"></div>
+            <span class="label">devcore — build.sh</span>
+          </div>
+          <div class="term-body" id="termBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK BELT -->
+  <div class="stack-belt">
+    <div class="wrap">
+      <span class="stack-label">Tecnología que usamos</span>
+      <div class="stack-items">
+        <span>React / Next.js</span>
+        <span>Node.js</span>
+        <span>TypeScript</span>
+        <span>PostgreSQL</span>
+        <span>AWS · GCP</span>
+        <span>Docker</span>
+        <span>React Native</span>
+        <span>Stripe · Mercado Pago</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Servicios</span>
+        <h2>Todo lo que un proyecto de software necesita</h2>
+        <p class="lead">Un mismo equipo cubre el ciclo completo, desde la primera pantalla hasta el servidor que la sostiene.</p>
+      </div>
+      <div class="pillars reveal">
+        <div class="pillar">
+          <span class="pillar-num">01</span>
+          <h3>Diseñar</h3>
+          <p>Research, arquitectura de producto, prototipos y un sistema de diseño consistente antes de escribir una línea de código.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">02</span>
+          <h3>Construir</h3>
+          <p>Frontend y backend a medida, con arquitectura pensada para crecer sin reescribirse cada seis meses.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">03</span>
+          <h3>Integrar</h3>
+          <p>Pagos, ERPs, AFIP, logística, CRMs: conectamos tu software con lo que tu operación ya usa.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">04</span>
+          <h3>Desplegar</h3>
+          <p>Infraestructura cloud, CI/CD y monitoreo, para que salir a producción no dependa de cruzar los dedos.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">05</span>
+          <h3>Asegurar</h3>
+          <p>Testing automatizado, revisiones de seguridad y control de calidad en cada entrega.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">06</span>
+          <h3>Evolucionar</h3>
+          <p>Soporte, mantenimiento y nuevas funciones a medida que tu negocio cambia de forma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIAS -->
+  <section class="section" id="industrias">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Industrias</span>
+        <h2>¿Qué tipo de proyecto necesitás?</h2>
+        <p class="lead">DevCore adapta el equipo y las integraciones a tu rubro; la forma de trabajar es la misma.</p>
+      </div>
+      <div class="chips reveal">
+        <span class="chip active">E-commerce y retail</span>
+        <span class="chip">Fintech y pagos</span>
+        <span class="chip">Salud y bienestar</span>
+        <span class="chip">Logística y delivery</span>
+        <span class="chip">Educación</span>
+        <span class="chip">Turismo</span>
+        <span class="chip">Real estate</span>
+        <span class="chip">Startups y MVPs</span>
+      </div>
+
+      <div class="industry-grid reveal">
+        <div class="industry-card">
+          <h3>E-commerce y retail</h3>
+          <p class="desc">Tiendas online, catálogos con variantes y paneles de gestión propios.</p>
+          <ul>
+            <li>Checkout y pagos integrados</li>
+            <li>Stock e inventario en tiempo real</li>
+            <li>Panel de administración a medida</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <h3>Fintech y pagos</h3>
+          <p class="desc">Productos financieros con la seguridad y trazabilidad que el rubro exige.</p>
+          <ul>
+            <li>Integraciones con pasarelas de pago</li>
+            <li>Conciliación y reportería</li>
+            <li>Arquitectura pensada para auditorías</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <h3>Salud y bienestar</h3>
+          <p class="desc">Turnos, historiales y portales de pacientes con manejo cuidadoso de datos sensibles.</p>
+          <ul>
+            <li>Agenda y turnos online</li>
+            <li>Portales para pacientes y profesionales</li>
+            <li>Cumplimiento de privacidad de datos</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <h3>Logística y delivery</h3>
+          <p class="desc">Seguimiento de pedidos y flotas en tiempo real, del depósito a la puerta del cliente.</p>
+          <ul>
+            <li>Tracking en vivo</li>
+            <li>Optimización de rutas</li>
+            <li>Apps para repartidores</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <h3>Educación</h3>
+          <p class="desc">Plataformas de cursos, seguimiento de alumnos y contenido a demanda.</p>
+          <ul>
+            <li>Aulas virtuales</li>
+            <li>Seguimiento de progreso</li>
+            <li>Pagos y matrículas online</li>
+          </ul>
+        </div>
+        <div class="industry-card">
+          <h3>Startups y MVPs</h3>
+          <p class="desc">De la idea a un producto probable de mostrar a inversores, sin sobre-construir.</p>
+          <ul>
+            <li>MVP funcional en semanas</li>
+            <li>Arquitectura lista para escalar</li>
+            <li>Iteración basada en datos reales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO TRABAJAMOS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Proceso</span>
+        <h2>Cómo trabajamos</h2>
+        <p class="lead">Cuatro etapas, sin sorpresas de alcance ni de precio en el camino.</p>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h4>Diagnóstico</h4>
+          <p>Entendemos tu operación y objetivo real antes de proponer ninguna solución.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h4>Propuesta y alcance</h4>
+          <p>Definimos alcance, tiempos y precio cerrado antes de empezar a construir.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h4>Desarrollo iterativo</h4>
+          <p>Sprints cortos con entregas visibles, no una caja negra hasta el final.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h4>Lanzamiento y soporte</h4>
+          <p>Salimos a producción y seguimos cerca durante el período de soporte incluido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANEL EN ACCION -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Transparencia</span>
+        <h2>Así seguís tu proyecto</h2>
+        <p class="lead">Acceso directo al tablero de trabajo: qué se está construyendo, qué está en revisión y qué ya está en producción. Sin reportes armados a último momento.</p>
+      </div>
+      <div class="mockcard reveal">
+        <div class="mock-top">
+          <span class="t">devcore / proyecto-retail-negocio</span>
+          <span class="t">Sprint 4 de 6</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-side">
+            <div class="item active">Backlog</div>
+            <div class="item">En curso</div>
+            <div class="item">En revisión</div>
+            <div class="item">Entregado</div>
+            <div class="item" style="margin-top:16px; color:#5E7071;">Documentación</div>
+            <div class="item" style="color:#5E7071;">Ambientes</div>
+          </div>
+          <div class="mock-main">
+            <div class="mock-row">
+              <div>
+                <div class="name">Checkout con Mercado Pago</div>
+                <div class="bar"><i style="width:100%"></i></div>
+              </div>
+              <span class="badge done">Entregado</span>
+            </div>
+            <div class="mock-row">
+              <div>
+                <div class="name">Panel de stock multi-sucursal</div>
+                <div class="bar"><i style="width:70%"></i></div>
+              </div>
+              <span class="badge progress">En curso</span>
+            </div>
+            <div class="mock-row">
+              <div>
+                <div class="name">App de repartidor — tracking en vivo</div>
+                <div class="bar"><i style="width:40%"></i></div>
+              </div>
+              <span class="badge review">En revisión</span>
+            </div>
+            <div class="mock-row">
+              <div>
+                <div class="name">Reportes y exportación contable</div>
+                <div class="bar"><i style="width:12%"></i></div>
+              </div>
+              <span class="badge progress">En curso</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="section" id="planes">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Planes y servicios</span>
+        <h2>Paquetes claros para cada etapa</h2>
+        <p class="lead">Precio de referencia por paquete; el presupuesto final se cierra en la propuesta según el alcance real de tu proyecto.</p>
+      </div>
+
+      <div class="plan-tabs reveal">
+        <button class="plan-tab active" data-tab="paquetes">Paquetes</button>
+        <button class="plan-tab" data-tab="addons">Servicios adicionales</button>
+      </div>
+
+      <div class="plan-panel active" id="panel-paquetes">
+        <div class="plan-grid reveal">
+
+          <div class="plan-card">
+            <h3>Diagnóstico</h3>
+            <p class="ideal">Ideal: antes de decidir qué construir.</p>
+            <div class="price">Sin cargo<small> · 45 min</small></div>
+            <ul class="plan-feats">
+              <li>Relevamiento de tu operación</li>
+              <li>Identificación de cuellos de botella</li>
+              <li>Recomendación de alcance y stack</li>
+              <li>Estimación de tiempos y presupuesto</li>
+            </ul>
+            <a href="#" class="btn btn-ghost btn-block">Agendar diagnóstico</a>
+          </div>
+
+          <div class="plan-card">
+            <h3>Starter</h3>
+            <p class="ideal">Ideal: landing, sitio institucional o MVP simple.</p>
+            <div class="price">Desde USD 1.500</div>
+            <ul class="plan-feats">
+              <li>Diseño UI a medida</li>
+              <li>Desarrollo frontend</li>
+              <li>Formulario o integración simple</li>
+              <li>Deploy incluido</li>
+            </ul>
+            <div class="plan-limits">
+              Sprints: <b>1–2</b> · Revisiones de diseño: <b>2</b><br>
+              Soporte post-lanzamiento: <b>15 días</b><br>
+              Entrega estimada: <b>2–3 semanas</b>
+            </div>
+            <a href="#" class="btn btn-ghost btn-block">Empezar proyecto</a>
+          </div>
+
+          <div class="plan-card featured">
+            <span class="plan-tag">Más elegido</span>
+            <h3>Crecimiento</h3>
+            <p class="ideal">Ideal: producto o plataforma con backend y usuarios.</p>
+            <div class="price">Desde USD 4.500</div>
+            <ul class="plan-feats">
+              <li>Todo lo del plan Starter, más:</li>
+              <li>Backend y base de datos a medida</li>
+              <li>Panel de administración</li>
+              <li>Hasta 2 integraciones externas</li>
+            </ul>
+            <div class="plan-limits">
+              Sprints: <b>4–6</b> · Revisiones de diseño: <b>ilimitadas</b><br>
+              Soporte post-lanzamiento: <b>2 meses</b><br>
+              Entrega estimada: <b>6–10 semanas</b>
+            </div>
+            <a href="#" class="btn btn-primary btn-block">Empezar proyecto</a>
+          </div>
+
+          <div class="plan-card">
+            <h3>Enterprise</h3>
+            <p class="ideal">Ideal: sistemas complejos, múltiples equipos o áreas.</p>
+            <div class="price">A cotizar</div>
+            <ul class="plan-feats">
+              <li>Todo lo del plan Crecimiento, más:</li>
+              <li>Arquitectura multi-servicio</li>
+              <li>Integraciones ilimitadas</li>
+              <li>Squad dedicado y SLA de soporte</li>
+            </ul>
+            <div class="plan-limits">
+              Sprints: <b>a definir</b> · Revisiones: <b>ilimitadas</b><br>
+              Soporte post-lanzamiento: <b>a medida</b><br>
+              Entrega estimada: <b>según alcance</b>
+            </div>
+            <a href="#" class="btn btn-ghost btn-block">Hablar con ventas</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="plan-panel" id="panel-addons">
+        <div class="addon-grid reveal">
+          <div class="addon-card">
+            <h4>Mantenimiento mensual</h4>
+            <p>Correcciones, actualizaciones de dependencias y monitoreo continuo.</p>
+            <span class="tag">Recurrente</span>
+          </div>
+          <div class="addon-card">
+            <h4>Hosting administrado</h4>
+            <p>Infraestructura cloud gestionada por nosotros, con backups y alertas.</p>
+            <span class="tag">Recurrente</span>
+          </div>
+          <div class="addon-card">
+            <h4>Soporte prioritario</h4>
+            <p>Respuesta garantizada en menos de 4 horas hábiles ante incidentes.</p>
+            <span class="tag">Add-on</span>
+          </div>
+          <div class="addon-card">
+            <h4>Integraciones extra</h4>
+            <p>Sumá conexiones con ERPs, CRMs o pasarelas de pago adicionales.</p>
+            <span class="tag">Add-on</span>
+          </div>
+          <div class="addon-card">
+            <h4>Diseño de marca</h4>
+            <p>Identidad visual, logo y sistema de diseño si todavía no lo tenés.</p>
+            <span class="tag">Puntual</span>
+          </div>
+          <div class="addon-card">
+            <h4>Auditoría de seguridad</h4>
+            <p>Revisión de vulnerabilidades y buenas prácticas antes de un lanzamiento crítico.</p>
+            <span class="tag">Puntual</span>
+          </div>
+          <div class="addon-card">
+            <h4>Migración de datos</h4>
+            <p>Pasaje ordenado desde tu sistema actual, sin perder información en el camino.</p>
+            <span class="tag">Puntual</span>
+          </div>
+          <div class="addon-card">
+            <h4>Capacitación de equipo</h4>
+            <p>Sesiones para que tu equipo use y administre el sistema con autonomía.</p>
+            <span class="tag">Puntual</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:64px;">
+        <h3 style="font-size:20px; margin-bottom:8px;" class="reveal">Compará en detalle</h3>
+        <p style="color:var(--muted); font-size:14px; margin-bottom:6px;" class="reveal">Qué incluye cada paquete antes de pedir tu propuesta a medida.</p>
+        <div class="compare-wrap reveal">
+          <table class="compare">
+            <thead>
+              <tr><th>Función</th><th class="center">Starter</th><th class="center">Crecimiento</th><th class="center">Enterprise</th></tr>
+            </thead>
+            <tbody>
+              <tr class="group-row"><td colspan="4">Diseño y desarrollo</td></tr>
+              <tr><td>Diseño UI a medida</td><td class="center yes">✓</td><td class="center yes">✓</td><td class="center yes">✓</td></tr>
+              <tr><td>Frontend a medida</td><td class="center yes">✓</td><td class="center yes">✓</td><td class="center yes">✓</td></tr>
+              <tr><td>Backend y base de datos</td><td class="center dash">—</td><td class="center yes">✓</td><td class="center yes">✓</td></tr>
+              <tr><td>Arquitectura multi-servicio</td><td class="center dash">—</td><td class="center dash">—</td><td class="center yes">✓</td></tr>
+              <tr class="group-row"><td colspan="4">Integraciones y soporte</td></tr>
+              <tr><td>Integraciones externas</td><td class="center dash">1 simple</td><td class="center">Hasta 2</td><td class="center yes">Ilimitadas</td></tr>
+              <tr><td>Soporte post-lanzamiento</td><td class="center">15 días</td><td class="center">2 meses</td><td class="center">A medida</td></tr>
+              <tr><td>Squad dedicado</td><td class="center dash">—</td><td class="center dash">—</td><td class="center yes">✓</td></tr>
+              <tr><td>SLA de soporte</td><td class="center dash">—</td><td class="center dash">—</td><td class="center yes">✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALIDAD -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Modalidad</span>
+        <h2>Elegí cómo querés trabajar con nosotros</h2>
+        <p class="lead">Mismo equipo, tres formas de contratarlo según cómo sea tu proyecto.</p>
+      </div>
+      <div class="mod-grid reveal">
+        <div class="mod-card reco">
+          <h3>Proyecto cerrado</h3>
+          <p>Alcance, tiempos y precio definidos antes de empezar. Pagos por hito de entrega.</p>
+          <div class="when">Ideal para: MVPs, sitios, apps con alcance claro</div>
+        </div>
+        <div class="mod-card">
+          <h3>Squad dedicado</h3>
+          <p>Un equipo de DevCore trabajando exclusivamente en tu roadmap, mes a mes.</p>
+          <div class="when">Ideal para: productos en crecimiento continuo</div>
+        </div>
+        <div class="mod-card">
+          <h3>Retainer de mantenimiento</h3>
+          <p>Horas mensuales reservadas para soporte, mejoras y guardia ante incidentes.</p>
+          <div class="when">Ideal para: sistemas ya en producción</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq-list reveal">
+
+        <div class="faq-item open">
+          <button class="faq-q"><span>¿DevCore construye desde cero o también mejora sistemas existentes?</span><span class="plus">+</span></button>
+          <div class="faq-a"><p>Las dos cosas. Podemos construir un producto nuevo de punta a punta, o sumarnos a un sistema que ya tenés para extenderlo, integrarlo o modernizarlo.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q"><span>¿Cómo se define el precio de un proyecto?</span><span class="plus">+</span></button>
+          <div class="faq-a"><p>Después del diagnóstico gratuito armamos una propuesta con alcance y precio cerrado. Si el proyecto crece en el camino, se cotiza aparte antes de sumarlo.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q"><span>¿Qué pasa después de que el proyecto se lanza?</span><span class="plus">+</span></button>
+          <div class="faq-a"><p>Cada paquete incluye un período de soporte post-lanzamiento. Después podés seguir con un retainer mensual de mantenimiento si querés mantenernos cerca.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q"><span>¿Puedo empezar solo con el diagnóstico, sin comprometerme a nada más?</span><span class="plus">+</span></button>
+          <div class="faq-a"><p>Sí. El diagnóstico inicial no tiene costo ni obligación de continuar. Es para entender tu situación antes de proponer una solución.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q"><span>¿Trabajan con equipos que ya tienen su propio desarrollador?</span><span class="plus">+</span></button>
+          <div class="faq-a"><p>Sí, con el modelo de squad dedicado podemos sumarnos como equipo extendido de tu área de tecnología, en lugar de trabajar de forma aislada.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q"><span>¿En qué tecnologías desarrollan?</span><span class="plus">+</span></button>
+          <div class="faq-a"><p>Trabajamos principalmente con React, Next.js, Node.js y TypeScript en el frontend y backend, PostgreSQL como base de datos, y AWS o GCP para infraestructura. Elegimos el stack según lo que el proyecto necesite.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <span class="eyebrow">Empecemos</span>
+        <h2>¿Tenés un problema que hoy resolvés con planillas, WhatsApp o parches?</h2>
+        <p>Contanos cómo opera tu negocio hoy y te decimos, sin costo, qué tendría sentido construir primero.</p>
+        <a href="#" class="btn btn-primary">Agendar diagnóstico gratuito</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo"><img src="assets/logo-horizontal.webp" alt="DevCore"></div>
+        <p class="foot-tag">Desarrollo de software a medida para negocios que necesitan algo que no existe todavía.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h5>Producto</h5>
+          <a href="#servicios">Servicios</a>
+          <a href="#industrias">Industrias</a>
+          <a href="#planes">Planes</a>
+        </div>
+        <div class="foot-col">
+          <h5>Empresa</h5>
+          <a href="#faq">FAQ</a>
+          <a href="#">Iniciar sesión</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="foot-col">
+          <h5>Legal</h5>
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 DevCore</span>
+      <img class="icon" src="assets/icon.webp" alt="">
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
