@@ -78,3 +78,12 @@ document.querySelectorAll('.chip').forEach(chip=>{
     chip.classList.add('active');
   });
 });
+
+// Contact links: open Gmail directly instead of the Windows default mail app.
+const gmailComposeUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=devcore97%40gmail.com&su=Consulta%20desde%20DevCore';
+
+document.querySelectorAll('a[href^="mailto:devcore97@gmail.com"]').forEach(link => {
+  link.href = gmailComposeUrl;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+});
