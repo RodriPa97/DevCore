@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión | DevCore</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <header class="auth-top">
+    <a class="auth-logo" href="index.html" aria-label="Volver al inicio">
+      <img src="assets/logo-horizontal.webp" alt="DevCore">
+    </a>
+    <a class="back-link" href="index.html">← Volver al inicio</a>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-card">
+      <span class="auth-eyebrow">Acceso</span>
+      <h1>Iniciar sesión</h1>
+      <p class="auth-sub">Ingresá con tu cuenta para acceder a tu espacio de DevCore.</p>
+
+      <form class="auth-form" id="loginForm">
+        <div class="field">
+          <label for="loginEmail">Correo electrónico</label>
+          <input id="loginEmail" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+        </div>
+
+        <div class="field">
+          <label for="loginPassword">Contraseña</label>
+          <input id="loginPassword" name="password" type="password" autocomplete="current-password" placeholder="Ingresá tu contraseña" required>
+        </div>
+
+        <div class="form-row">
+          <label class="check"><input type="checkbox" name="remember"> Recordarme</label>
+          <span>¿Olvidaste tu contraseña?</span>
+        </div>
+
+        <button class="auth-btn" type="submit">Iniciar sesión</button>
+      </form>
+
+      <div class="auth-note" id="loginNote" aria-live="polite"></div>
+
+      <div class="auth-switch">
+        ¿Todavía no tenés cuenta? <a href="registro.html">Registrarse</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      document.getElementById('loginNote').textContent = 'Interfaz lista. El próximo paso es conectar la autenticación y la base de datos.';
+    });
+  </script>
+</body>
+</html>
