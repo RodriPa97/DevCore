@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrarse | DevCore</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <header class="auth-top">
+    <a class="auth-logo" href="index.html" aria-label="Volver al inicio">
+      <img src="assets/logo-horizontal.webp" alt="DevCore">
+    </a>
+    <a class="back-link" href="index.html">← Volver al inicio</a>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-card">
+      <span class="auth-eyebrow">Nueva cuenta</span>
+      <h1>Registrarse</h1>
+      <p class="auth-sub">Creá tu cuenta para comenzar a trabajar con DevCore.</p>
+
+      <form class="auth-form" id="registerForm">
+        <div class="field">
+          <label for="registerName">Nombre y apellido</label>
+          <input id="registerName" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="field">
+          <label for="registerEmail">Correo electrónico</label>
+          <input id="registerEmail" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+        </div>
+
+        <div class="field">
+          <label for="registerPassword">Contraseña</label>
+          <input id="registerPassword" name="password" type="password" autocomplete="new-password" placeholder="Creá una contraseña" minlength="8" required>
+        </div>
+
+        <div class="field">
+          <label for="registerPasswordConfirm">Confirmar contraseña</label>
+          <input id="registerPasswordConfirm" name="passwordConfirm" type="password" autocomplete="new-password" placeholder="Repetí tu contraseña" minlength="8" required>
+        </div>
+
+        <button class="auth-btn" type="submit">Crear cuenta</button>
+      </form>
+
+      <div class="auth-note" id="registerNote" aria-live="polite"></div>
+
+      <div class="auth-switch">
+        ¿Ya tenés una cuenta? <a href="login.html">Iniciar sesión</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const password = document.getElementById('registerPassword').value;
+      const confirmation = document.getElementById('registerPasswordConfirm').value;
+      const note = document.getElementById('registerNote');
+
+      if (password !== confirmation) {
+        note.textContent = 'Las contraseñas no coinciden.';
+        return;
+      }
+
+      note.textContent = 'Interfaz lista. El próximo paso es conectar el registro con la base de datos.';
+    });
+  </script>
+</body>
+</html>
