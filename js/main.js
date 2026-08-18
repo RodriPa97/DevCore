@@ -87,3 +87,22 @@ document.querySelectorAll('a[href^="mailto:devcore97@gmail.com"]').forEach(link 
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
 });
+
+// Header access modules.
+// Reuse the previous Contacto style for Registrarse and the primary CTA style for Iniciar sesión.
+const registerLink = document.querySelector('.nav-cta .nav-login');
+const loginLink = document.querySelector('.nav-cta .btn-primary');
+
+if (registerLink) {
+  registerLink.textContent = 'Registrarse';
+  registerLink.href = 'registro.html';
+  registerLink.removeAttribute('target');
+  registerLink.removeAttribute('rel');
+}
+
+if (loginLink) {
+  loginLink.textContent = 'Iniciar sesión';
+  loginLink.href = 'login.html';
+  loginLink.removeAttribute('target');
+  loginLink.removeAttribute('rel');
+}
