@@ -220,6 +220,22 @@ header.site{
 .badge.progress{background:rgba(23,184,166,0.14); color:var(--teal);}
 .badge.review{background:rgba(255,193,7,0.12); color:#e0b23a;}
 .badge.done{background:rgba(143,226,58,0.14); color:var(--lime);}
+@media (max-width:880px){
+  .mock-body{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:#17B8A6 rgba(255,255,255,0.08);
+  }
+  .mock-body::-webkit-scrollbar{height:6px;}
+  .mock-body::-webkit-scrollbar-track{background:rgba(255,255,255,0.06);}
+  .mock-body::-webkit-scrollbar-thumb{background:linear-gradient(90deg,#8FE23A,#17B8A6); border-radius:4px;}
+  .mock-body{grid-template-columns:170px minmax(440px,1fr);}
+  .mock-row{flex-wrap:nowrap; gap:16px;}
+  .mock-row .name{white-space:nowrap;}
+  .mock-row .bar{flex-shrink:0;}
+  .badge{flex-shrink:0;}
+}
 
 /* PLANES */
 .plan-tabs{display:inline-flex; background:var(--panel); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:4px; gap:2px; margin-bottom:40px;}
